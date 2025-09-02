@@ -1,0 +1,105 @@
+{
+  "version": "1.0",
+  "currency": "EUR",
+  "plans": [
+    {
+      "id": "individual",
+      "name": "Individual",
+      "description": "Perfect for independent professionals and consultants",
+      "price": 99,
+      "billingCycle": "monthly",
+      "features": [
+        "Access to all 4 AI models",
+        "100 analyses per month",
+        "Basic reporting",
+        "Email support"
+      ],
+      "stripeProductId": "prod_slavkokernel_individual",
+      "stripePriceId": "price_slavkokernel_individual_monthly"
+    },
+    {
+      "id": "team",
+      "name": "Team",
+      "description": "Ideal for small to medium-sized teams and departments",
+      "price": 499,
+      "billingCycle": "monthly",
+      "features": [
+        "Access to all 4 AI models",
+        "1,000 analyses per month",
+        "Advanced reporting & analytics",
+        "Priority support",
+        "API access"
+      ],
+      "stripeProductId": "prod_slavkokernel_team",
+      "stripePriceId": "price_slavkokernel_team_monthly",
+      "highlighted": true
+    },
+    {
+      "id": "enterprise",
+      "name": "Enterprise",
+      "description": "For organizations with advanced needs and large-scale deployment",
+      "price": "Custom",
+      "billingCycle": "custom",
+      "features": [
+        "Access to all 4 AI models",
+        "Unlimited analyses",
+        "Custom integration",
+        "Dedicated support team",
+        "On-premises deployment option"
+      ],
+      "stripeProductId": "prod_slavkokernel_enterprise",
+      "contactSales": true
+    }
+  ],
+  "addOns": [
+    {
+      "id": "additional_analyses",
+      "name": "Additional Analyses",
+      "description": "Purchase additional analyses when you exceed your plan limit",
+      "price": 0.50,
+      "unit": "per analysis",
+      "stripeProductId": "prod_slavkokernel_additional_analyses"
+    },
+    {
+      "id": "dedicated_support",
+      "name": "Dedicated Support",
+      "description": "Get a dedicated support manager for your account",
+      "price": 299,
+      "billingCycle": "monthly",
+      "stripeProductId": "prod_slavkokernel_dedicated_support"
+    },
+    {
+      "id": "custom_model_training",
+      "name": "Custom Model Training",
+      "description": "Train models on your specific data for enhanced performance",
+      "price": 1999,
+      "billingCycle": "one-time",
+      "stripeProductId": "prod_slavkokernel_custom_model_training"
+    }
+  ],
+  "discounts": [
+    {
+      "id": "annual_discount",
+      "name": "Annual Billing Discount",
+      "description": "Save 15% when billed annually",
+      "percentage": 15,
+      "applicablePlans": ["individual", "team"]
+    },
+    {
+      "id": "nonprofit_discount",
+      "name": "Nonprofit Discount",
+      "description": "Special pricing for qualified nonprofit organizations",
+      "percentage": 25,
+      "applicablePlans": ["individual", "team"],
+      "requiresVerification": true
+    },
+    {
+      "id": "education_discount",
+      "name": "Education Discount",
+      "description": "Special pricing for qualified educational institutions",
+      "percentage": 30,
+      "applicablePlans": ["individual", "team"],
+      "requiresVerification": true
+    }
+  ]
+}

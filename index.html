@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SlavkoKernel™ - Multi-Model AI Platform</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            200: '#bae6fd',
+                            300: '#7dd3fc',
+                            400: '#38bdf8',
+                            500: '#0ea5e9',
+                            600: '#0284c7',
+                            700: '#0369a1',
+                            800: '#075985',
+                            900: '#0c4a6e',
+                        },
+                        secondary: {
+                            50: '#f5f3ff',
+                            100: '#ede9fe',
+                            200: '#ddd6fe',
+                            300: '#c4b5fd',
+                            400: '#a78bfa',
+                            500: '#8b5cf6',
+                            600: '#7c3aed',
+                            700: '#6d28d9',
+                            800: '#5b21b6',
+                            900: '#4c1d95',
+                        },
+                    },
+                },
+            },
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .btn {
+            @apply inline-flex items-center justify-center rounded-md border border-transparent px-4 py-2 text-sm font-medium shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-2;
+        }
+        .btn-primary {
+            @apply bg-primary-600 text-white hover:bg-primary-700 focus:ring-primary-500;
+        }
+        .btn-outline {
+            @apply border-gray-300 bg-white text-gray-700 hover:bg-gray-50 focus:ring-primary-500;
+        }
+        .card {
+            @apply overflow-hidden rounded-lg bg-white shadow;
+        }
+    </style>
+</head>
+<body>
+    <div class="min-h-screen">
+        <header class="bg-white shadow-sm">
+            <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                <div class="flex h-16 items-center justify-between">
+                    <div class="flex items-center">
+                        <div class="flex-shrink-0">
+                            <span class="text-2xl font-bold text-primary-600">SlavkoKernel™</span>
+                        </div>
+                        <nav class="ml-10 hidden space-x-8 md:flex">
+                            <a href="#features" class="text-gray-500 hover:text-gray-900">Features</a>
+                            <a href="#industries" class="text-gray-500 hover:text-gray-900">Industries</a>
+                            <a href="#models" class="text-gray-500 hover:text-gray-900">AI Models</a>
+                            <a href="#pricing" class="text-gray-500 hover:text-gray-900">Pricing</a>
+                        </nav>
+                    </div>
+                    <div class="flex items-center">
+                        <a href="#contact" class="btn btn-outline mr-4">Contact Sales</a>
+                        <a href="#demo" class="btn btn-primary">Request Demo</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <!-- Hero Section -->
+            <section class="bg-gradient-to-r from-primary-600 to-secondary-600 py-20 text-white">
+                <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                    <div class="grid grid-cols-1 gap-12 md:grid-cols-2">
+                        <div class="flex flex-col justify-center">
+                            <h1 class="mb-6 text-4xl font-bold text-white md:text-5xl">
+                                Transform Decision-Making with Multi-Model AI
+                            </h1>
+                            <p class="mb-8 text-xl text-white opacity-90">
+                                SlavkoKernel™ combines four complementary AI models to deliver technical precision, contextual understanding, probability assessment, and strategic recommendations—all in one integrated platform.
+                            </p>
+                            <div class="flex flex-wrap gap-4">
+                                <a href="#demo" class="btn bg-white text-primary-600 hover:bg-gray-100">
+                                    Request Demo
+                                </a>
+                                <a href="#learn-more" class="btn border border-white bg-transparent text-white hover:bg-white/10">
+                                    Learn More
+                                </a>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-center">
+                            <div class="relative h-80 w-80">
+                                <div class="absolute inset-0 flex items-center justify-center rounded-full bg-white/10 p-8">
+                                    <div class="grid grid-cols-2 gap-4">
+                                        <div class="rounded-lg bg-white p-4 text-center shadow-lg">
+                                            <div class="mb-2 text-lg font-bold text-primary-600">Audit™</div>
+                                            <div class="text-sm text-gray-600">Technical Precision</div>
+                                        </div>
+                                        <div class="rounded-lg bg-white p-4 text-center shadow-lg">
+                                            <div class="mb-2 text-lg font-bold text-secondary-600">Introspekt™</div>
+                                            <div class="text-sm text-gray-600">Contextual Depth</div>
+                                        </div>
+                                        <div class="rounded-lg bg-white p-4 text-center shadow-lg">
+                                            <div class="mb-2 text-lg font-bold text-primary-600">Score™</div>
+                                            <div class="text-sm text-gray-600">Probability Assessment</div>
+                                        </div>
+                                        <div class="rounded-lg bg-white p-4 text-center shadow-lg">
+                                            <div class="mb-2 text-lg font-bold text-secondary-600">Tactic™</div>
+                                            <div class="text-sm text-gray-600">Strategic Foresight</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Launch Kit Section -->
+            <section id="launch-kit" class="py-16">
+                <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                    <div class="text-center">
+                        <h2 class="mb-4 text-3xl font-bold">SlavkoKernel™ Launch Kit</h2>
+                        <p class="mx-auto mb-12 max-w-3xl text-lg text-gray-600">
+                            Everything you need to launch the SlavkoKernel™ platform is included in this comprehensive kit.
+                        </p>
+                    </div>
+
+                    <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+                        <div class="card p-6">
+                            <div class="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-md bg-primary-100 text-primary-600">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-6 w-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m-3-2.818l.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                            </div>
+                            <h3 class="mb-2 text-xl font-semibold">Pricing Structure</h3>
+                            <p class="mb-4 text-gray-600">
+                                Complete pricing structure with plans, add-ons, and discounts in a ready-to-implement JSON format.
+                            </p>
+                            <a href="pricing/pricing.json" class="text-primary-600 hover:text-primary-700">View Pricing JSON →</a>
+                        </div>
+
+                        <div class="card p-6">
+                            <div class="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-md bg-secondary-100 text-secondary-600">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-6 w-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 8.25h19.5M2.25 9h19.5m-16.5 5.25h6m-6 2.25h3m-3.75 3h15a2.25 2.25 0 002.25-2.25V6.75A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25v10.5A2.25 2.25 0 004.5 19.5z" />
+                                </svg>
+                            </div>
+                            <h3 class="mb-2 text-xl font-semibold">Stripe Integration</h3>
+                            <p class="mb-4 text-gray-600">
+                                Ready-to-implement Stripe billing integration with subscription management, webhooks, and customer portal.
+                            </p>
+                            <a href="stripe/stripe-integration.js" class="text-primary-600 hover:text-primary-700">View Stripe Integration →</a>
+                        </div>
+
+                        <div class="card p-6">
+                            <div class="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-md bg-primary-100 text-primary-600">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-6 w-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 01.865-.501 48.172 48.172 0 003.423-.379c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z" />
+                                </svg>
+                            </div>
+                            <h3 class="mb-2 text-xl font-semibold">Demo Chat Agents</h3>
+                            <p class="mb-4 text-gray-600">
+                                Configuration for the demo chat agents (Slavko, Zlata, Mirror) with personality traits and model combinations.
+                            </p>
+                            <a href="chat/chat-agents.js" class="text-primary-600 hover:text-primary-700">View Chat Agents →</a>
+                        </div>
+
+                        <div class="card p-6">
+                            <div class="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-md bg-secondary-100 text-secondary-600">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-6 w-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 17.25v1.007a3 3 0 01-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0115 18.257V17.25m6-12V15a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 15V5.25m18 0A2.25 2.25 0 0018.75 3H5.25A2.25 2.25 0 003 5.25m18 0V12a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 12V5.25" />
+                                </svg>
+                            </div>
+                            <h3 class="mb-2 text-xl font-semibold">Landing Page</h3>
+                            <p class="mb-4 text-gray-600">
+                                React component for the main landing page with industry-specific sections, features, and pricing.
+                            </p>
+                            <a href="landing/landing-page.jsx" class="text-primary-600 hover:text-primary-700">View Landing Page →</a>
+                        </div>
+
+                        <div class="card p-6">
+                            <div class="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-md bg-primary-100 text-primary-600">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-6 w-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
+                                </svg>
+                            </div>
+                            <h3 class="mb-2 text-xl font-semibold">Legal Documents</h3>
+                            <p class="mb-4 text-gray-600">
+                                GDPR and EU Digital Act compliant terms of service ready for review by your legal team.
+                            </p>
+                            <a href="legal/terms-of-service.md" class="text-primary-600 hover:text-primary-700">View Terms of Service →</a>
+                        </div>
+
+                        <div class="card p-6">
+                            <div class="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-md bg-secondary-100 text-secondary-600">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-6 w-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M10.34 15.84c-.688-.06-1.386-.09-2.09-.09H7.5a4.5 4.5 0 110-9h.75c.704 0 1.402-.03 2.09-.09m0 9.18c.253.962.584 1.892.985 2.783.247.55.06 1.21-.463 1.511l-.657.38c-.551.318-1.26.117-1.527-.461a20.845 20.845 0 01-1.44-4.282m3.102.069a18.03 18.03 0 01-.59-4.59c0-1.586.205-3.124.59-4.59m0 9.18a23.848 23.848 0 018.835 2.535M10.34 6.66a23.847 23.847 0 008.835-2.535m0 0A23.74 23.74 0 0018.795 3m.38 1.125a23.91 23.91 0 011.014 5.395m-1.014 8.855c-.118.38-.245.754-.38 1.125m.38-1.125a23.91 23.91 0 001.014-5.395m0-3.46c.495.413.811 1.035.811 1.73 0 .695-.316 1.317-.811 1.73m0-3.46a24.347 24.347 0 010 3.46" />
+                                </svg>
+                            </div>
+                            <h3 class="mb-2 text-xl font-semibold">Marketing Prompts</h3>
+                            <p class="mb-4 text-gray-600">
+                                Ready-to-use marketing prompts for advertising campaigns across social media, search, email, and more.
+                            </p>
+                            <a href="marketing/marketing-prompts.md" class="text-primary-600 hover:text-primary-700">View Marketing Prompts →</a>
+                        </div>
+                    </div>
+
+                    <div class="mt-12 text-center">
+                        <a href="SlavkoKernel_Launch_Kit.zip" class="btn btn-primary">Download Complete Launch Kit</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CTA Section -->
+            <section id="demo" class="bg-primary-600 py-16 text-white">
+                <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                    <div class="grid grid-cols-1 gap-12 md:grid-cols-2">
+                        <div>
+                            <h2 class="mb-6 text-3xl font-bold text-white">Ready to launch SlavkoKernel™?</h2>
+                            <p class="mb-8 text-lg text-white opacity-90">
+                                Our Launch Kit contains everything you need to get started. Request a personalized demo to see how SlavkoKernel™ can transform decision-making in your organization.
+                            </p>
+                            <div class="flex flex-wrap gap-4">
+                                <a href="#contact" class="btn bg-white text-primary-600 hover:bg-gray-100">
+                                    Request Demo
+                                </a>
+                                <a href="#pricing" class="btn border border-white bg-transparent text-white hover:bg-white/10">
+                                    View Pricing
+                                </a>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-center">
+                            <form class="w-full max-w-md rounded-lg bg-white p-6 shadow-lg">
+                                <h3 class="mb-4 text-xl font-semibold text-gray-900">Request a Demo</h3>
+                                <div class="mb-4">
+                                    <label for="name" class="mb-1 block text-sm font-medium text-gray-700">
+                                        Name
+                                    </label>
+                                    <input
+                                        type="text"
+                                        id="name"
+                                        class="w-full rounded-md border border-gray-300 px-3 py-2 shadow-sm focus:border-primary-500 focus:outline-none focus:ring-1 focus:ring-primary-500"
+                                        placeholder="Your name"
+                                    />
+                                </div>
+                                <div class="mb-4">
+                                    <label for="email" class="mb-1 block text-sm font-medium text-gray-700">
+                                        Email
+                                    </label>
+                                    <input
+                                        type="email"
+                                        id="email"
+                                        class="w-full rounded-md border border-gray-300 px-3 py-2 shadow-sm focus:border-primary-500 focus:outline-none focus:ring-1 focus:ring-primary-500"
+                                        placeholder="you@company.com"
+                                    />
+                                </div>
+                                <div class="mb-4">
+                                    <label for="company" class="mb-1 block text-sm font-medium text-gray-700">
+                                        Company
+                                    </label>
+                                    <input
+                                        type="text"
+                                        id="company"
+                                        class="w-full rounded-md border border-gray-300 px-3 py-2 shadow-sm focus:border-primary-500 focus:outline-none focus:ring-1 focus:ring-primary-500"
+                                        placeholder="Your company"
+                                    />
+                                </div>
+                                <div class="mb-6">
+                                    <label for="industry" class="mb-1 block text-sm font-medium text-gray-700">
+                                        Industry
+                                    </label>
+                                    <select
+                                        id="industry"
+                                        class="w-full rounded-md border border-gray-300 px-3 py-2 shadow-sm focus:border-primary-500 focus:outline-none focus:ring-1 focus:ring-primary-500"
+                                    >
+                                        <option value="">Select your industry</option>
+                                        <option value="healthcare">Healthcare</option>
+                                        <option value="finance">Financial Services</option>
+                                        <option value="legal">Legal</option>
+                                        <option value="manufacturing">Manufacturing</option>
+                                        <option value="creative">Creative Industries</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+                                <button
+                                    type="submit"
+                                    class="w-full rounded-md bg-primary-600 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2"
+                                >
+                                    Request Demo
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="bg-gray-900 py-12 text-white">
+            <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 gap-8 md:grid-cols-4">
+                    <div>
+                        <div class="text-2xl font-bold text-white">SlavkoKernel™</div>
+                        <p class="mt-2 text-sm text-gray-400">
+                            Transform decision-making with multi-model AI that combines technical precision, contextual understanding, probability assessment, and strategic recommendations.
+                        </p>
+                    </div>
+                    <div>
+                        <h3 class="mb-3 text-lg font-semibold">Solutions</h3>
+                        <ul class="space-y-2 text-sm text-gray-400">
+                            <li><a href="#healthcare" class="hover:text-white">Healthcare</a></li>
+                            <li><a href="#finance" class="hover:text-white">Financial Services</a></li>
+                            <li><a href="#legal" class="hover:text-white">Legal</a></li>
+                            <li><a href="#manufacturing" class="hover:text-white">Manufacturing</a></li>
+                            <li><a href="#creative" class="hover:text-white">Creative Industries</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="mb-3 text-lg font-semibold">Company</h3>
+                        <ul class="space-y-2 text-sm text-gray-400">
+                            <li><a href="#about" class="hover:text-white">About Us</a></li>
+                            <li><a href="#careers" class="hover:text-white">Careers</a></li>
+                            <li><a href="#blog" class="hover:text-white">Blog</a></li>
+                            <li><a href="#contact" class="hover:text-white">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="mb-3 text-lg font-semibold">Legal</h3>
+                        <ul class="space-y-2 text-sm text-gray-400">
+                            <li><a href="#privacy" class="hover:text-white">Privacy Policy</a></li>
+                            <li><a href="#terms" class="hover:text-white">Terms of Service</a></li>
+                            <li><a href="#security" class="hover:text-white">Security</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mt-8 border-t border-gray-800 pt-8 text-center text-sm text-gray-400">
+                    <p>&copy; 2025 SlavkoKernel™. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

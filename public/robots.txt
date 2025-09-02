@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://slavkokernel.vercel.app
+
+# Sitemaps
+Sitemap: https://slavkokernel.vercel.app/sitemap.xml

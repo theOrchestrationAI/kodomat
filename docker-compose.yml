@@ -1,0 +1,58 @@
+version: '3.8'
+
+services:
+  api:
+    build: ./api
+    ports:
+      - "8000:8000"
+    environment:
+      - REDIS_URL=redis://redis:6379
+      - SENTRY_DSN=${SENTRY_DSN}
+    volumes:
+      - ./api:/app
+    depends_on:
+      - redis
+    command: uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
+
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+
+  prometheus:
+    image: prom/prometheus:latest
+    ports:
+      - "9090:9090"
+    volumes:
+      - ./monitoring/prometheus.yml:/etc/prometheus/prometheus.yml
+      - prometheus_data:/prometheus
+
+  grafana:
+    image: grafana/grafana:latest
+    ports:
+      - "3000:3000"
+    environment:
+      - GF_SECURITY_ADMIN_PASSWORD=admin
+      - GF_SECURITY_ADMIN_USER=admin
+    volumes:
+      - grafana_data:/var/lib/grafana
+      - ./monitoring/grafana:/etc/grafana/provisioning
+
+  firebase-emulator:
+    image: andreysenov/firebase-tools:latest
+    ports:
+      - "4000:4000"  # Emulator Suite UI
+      - "9099:9099"  # Auth
+      - "8080:8080"  # Firestore
+      - "5001:5001"  # Functions
+    volumes:
+      - .:/app
+    working_dir: /app
+    command: firebase emulators:start --project demo-project
+
+volumes:
+  redis_data:
+  prometheus_data:
+  grafana_data:

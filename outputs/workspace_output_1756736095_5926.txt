@@ -1,0 +1,22 @@
+total 68
+drwxr-xr-x 12 root root  4096 Sep  1 14:14 .
+drwxr-xr-x  4 root root    84 Sep  1 14:14 ..
+drwxr-xr-x  8 root root  4096 Sep  1 14:14 .git
+drwxr-xr-x  3 root root    31 Sep  1 14:14 .github
+-rw-r--r--  1 root root   260 Sep  1 14:14 .gitignore
+-rw-r--r--  1 root root  1752 Sep  1 14:14 README.md
+drwxr-xr-x  2 root root    36 Sep  1 14:14 chat
+-rw-r--r--  1 root root   423 Sep  1 14:14 codesandbox-link.md
+-rw-r--r--  1 root root 24147 Sep  1 14:14 index.html
+drwxr-xr-x  2 root root    38 Sep  1 14:14 landing
+drwxr-xr-x  2 root root    41 Sep  1 14:14 legal
+drwxr-xr-x  2 root root  4096 Sep  1 14:14 marketing
+-rw-r--r--  1 root root   100 Sep  1 14:14 next.config.js
+-rw-r--r--  1 root root   308 Sep  1 14:14 package.json
+drwxr-xr-x  2 root root    92 Sep  1 14:14 pages
+-rw-r--r--  1 root root   114 Sep  1 14:14 pnpm-lock.yaml
+drwxr-xr-x  2 root root    34 Sep  1 14:14 pricing
+drwxr-xr-x  2 root root    30 Sep  1 14:14 public
+drwxr-xr-x  2 root root    43 Sep  1 14:14 stripe
+-rw-r--r--  1 root root   628 Sep  1 14:14 todo.md
+-rw-r--r--  1 root root   179 Sep  1 14:14 vercel.json

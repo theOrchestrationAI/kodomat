@@ -1,0 +1,38 @@
+{
+  "name": "slavkokernel",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "test": "jest",
+    "analyze": "ANALYZE=true next build"
+  },
+  "dependencies": {
+    "@sentry/nextjs": "^7.64.0",
+    "firebase": "^10.1.0",
+    "firebase-admin": "^11.10.1",
+    "lru-cache": "^10.0.0",
+    "next": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "styled-components": "^5.3.11",
+    "zod": "^3.21.4"
+  },
+  "devDependencies": {
+    "@next/bundle-analyzer": "^13.4.13",
+    "@testing-library/jest-dom": "^6.0.0",
+    "@testing-library/react": "^14.0.0",
+    "@types/node": "^20.4.9",
+    "@types/react": "^18.2.20",
+    "@types/react-dom": "^18.2.7",
+    "@types/styled-components": "^5.1.26",
+    "eslint": "^8.46.0",
+    "eslint-config-next": "latest",
+    "jest": "^29.6.2",
+    "jest-environment-jsdom": "^29.6.2",
+    "typescript": "^5.1.6"
+  }
+}

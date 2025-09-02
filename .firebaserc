@@ -1,0 +1,17 @@
+{
+  "projects": {
+    "default": "slavkokernel"
+  },
+  "targets": {
+    "slavkokernel": {
+      "hosting": {
+        "production": [
+          "slavkokernel"
+        ],
+        "staging": [
+          "slavkokernel-staging"
+        ]
+      }
+    }
+  }
+}
