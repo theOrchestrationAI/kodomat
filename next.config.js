@@ -17,7 +17,7 @@ const nextConfig = {
   poweredByHeader: false,
   productionBrowserSourceMaps: false,
   experimental: {
-    serverActions: true,
+    
     optimizeCss: true,
   },
   // Uncomment to enable bundle analyzer in production build
